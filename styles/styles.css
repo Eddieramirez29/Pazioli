@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/*Colores para los botones*/
+/*Colores del background*/
+/*Color de texto botones*/
+/*Desktop Font Styles*/
+/*Desktop Font Mobil*/
+/*Tamaño de los botones*/
+/*Border radius botón*/
+/*Posiciones*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+/*Botón tipo 1*/
+.header__container {
+  width: 320px;
+}
+
+.header__container-item-P {
+  position: absolute;
+  height: 31.79px;
+  width: 39.41px;
+  left: 15px;
+  top: 32px;
+  border-radius: 0px;
+}
+
+.header__container-item-carrito-negro {
+  background-color: white;
+  position: relative;
+  height: 22px;
+  width: 21px;
+  left: 217px;
+  top: 32px;
+  border-radius: 0px;
+}
+
+.header__container-item-description {
+  position: absolute;
+  height: 19px;
+  width: 176px;
+  top: 139px;
+  left: 50px;
+  border-radius: nullpx;
+  font-family: raleway 500 16px;
+  color: gray;
+}
+
+.header__container-item-title {
+  position: absolute;
+  height: 62px;
+  width: 288px;
+  top: 176px;
+  left: 15px;
+  border-radius: nullpx;
+}
+
+.header__container-item-button1 {
+  height: 32px;
+  width: 100px;
+  position: absolute;
+  border-radius: 10px;
+  font-style: Poppins 500 14px;
+  background-color: black;
+  color: white;
+  top: 270px;
+  left: 20px;
+}
+
+.header__container-item-button1:hover {
+  height: 32px;
+  width: 100px;
+  position: absolute;
+  border-radius: 10px;
+  background-color: gray;
+}
+
+.header__container-item-button2 {
+  height: 32px;
+  width: 100px;
+  position: absolute;
+  border-radius: 10px;
+  font-style: Poppins 500 14px;
+  top: 270px;
+  left: 125px;
+}
+
+.header__container-item-button2:hover {
+  height: 32px;
+  width: 100px;
+  position: absolute;
+  border-radius: 10px;
+  background-color: gray;
+}/*# sourceMappingURL=styles.css.map */

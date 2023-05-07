@@ -1,0 +1,116 @@
+@import "vars";
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+/*Botón tipo 1*/
+
+@mixin button-type1
+{
+    height: $boton-tipo-1-height;
+    width: $boton-tipo-1-width;
+    position: $position-A;
+    border-radius: $border-radius-type-1;       
+}
+
+@mixin button-hover
+{
+    background-color: $color-button-hover;
+}
+
+@mixin font-style-type-1
+{
+    font-style: $Font-styles-1;
+}
+
+.header__container
+{
+    width: 320px;
+}
+
+.header__container-item-P
+{
+    position: absolute;
+    height: 31.79px;
+    width: 39.41px;
+    left: 15px;
+    top: 32px;
+    border-radius: 0px;
+}
+
+.header__container-item-carrito-negro
+{
+    background-color: white;
+    position: relative;
+    height: 22.0px;
+    width: 21px;
+    left: 217px;
+    top: 32px;
+    border-radius: 0px;
+    
+}
+
+.header__container-item-description
+{
+    position: absolute;
+    height: 19px;
+    width: 176px;
+    top: 139px;
+    left: 50px;
+    border-radius: nullpx;
+    font-family: raleway 500 16px;
+    color: gray;
+}
+
+.header__container-item-title
+{
+    position: absolute;
+    height: 62px;
+    width: 288px;  
+    top: 176px;
+    left: 15px;
+    border-radius: nullpx;
+     
+}
+
+.header__container-item-button1
+{
+    @include button-type1;
+    @include font-style-type-1;
+    background-color: black;
+    color: $color2-text-button;
+    top: 270px;
+    left:20px;
+    
+}
+
+.header__container-item-button1:hover
+{
+    @include button-type1;
+    @include button-hover;
+    
+    
+}
+
+.header__container-item-button2
+{
+    
+    @include button-type1;
+    @include font-style-type-1;
+    top: 270px;
+    left: 125px; 
+}
+
+.header__container-item-button2:hover
+{
+    
+    @include button-type1;
+    @include button-hover;
+    
+}
+
+
