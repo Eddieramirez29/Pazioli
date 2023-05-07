@@ -93,4 +93,11 @@
   position: absolute;
   border-radius: 10px;
   background-color: gray;
+}
+
+/*Estilos del main y sus articulos*/
+.main__container-articule-1 {
+  position: absolute;
+  top: 358px;
+  left: 5px;
 }/*# sourceMappingURL=styles.css.map */
