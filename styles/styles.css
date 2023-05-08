@@ -107,10 +107,18 @@
   height: 72px;
   width: 288px;
 }
+.main__section .main__section-background-gray0 {
+  position: relative;
+  height: 800px;
+  width: 320px;
+  background: linear-gradient(0deg, #FFFFFF 0%, rgba(0, 0, 0, 0.75) 37.19%, rgba(0, 0, 0, 0.75) 76.04%, #FFFFFF 100%);
+  top: -190px;
+  z-index: 1;
+}
 .main__section .main__section-backgound1 {
   position: relative;
   top: 500px;
-  background-color: gray;
+  z-index: 0;
 }
 .main__section .main__section-h2 {
   font-size: 24px;
@@ -120,19 +128,57 @@
   text-align: center;
   position: relative;
   top: 200px;
+  z-index: 2;
 }
 .main__section .main__section-backgound-gray1 {
   position: relative;
   top: 230px;
   left: 78px;
+  z-index: 3;
 }
 .main__section .main__section-backgound-gray2 {
   position: relative;
   top: 60px;
   left: 30px;
   transform: rotate(0deg);
+  z-index: 4;
 }
 .main__section .main__section-piano-cafe1 {
   position: absolute;
   top: 625px;
+  z-index: 5;
+}
+.main__section .main__section-list > li {
+  list-style: none;
+  position: relative;
+  top: 350px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.main__section .main__section-list-text1 {
+  font-weight: 400;
+  font-size: 24px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: white;
+}
+.main__section .main__section-list-text2 {
+  font-weight: 700;
+  font-size: 12px;
+  color: white;
+}
+.main__section .main__section-list-text3 {
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.main__section .main__section-list-text4 {
+  color: gray;
+  font-weight: 400;
+  font-size: 16px;
+}
+.main__section .main__section-list-star {
+  margin-left: 10px;
 }/*# sourceMappingURL=styles.css.map */
