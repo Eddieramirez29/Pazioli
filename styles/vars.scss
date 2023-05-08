@@ -14,12 +14,6 @@ $color1-text-button: black;
 $color2-text-button: white;
 
 /*Desktop Font Styles*/
-$Título-principal-Desktop: Regular 400,  800, 56px;
-$Subtítulos-Desktop: Regular 400, 32px;
-$Párrafos-Desktop:Regular 400, 16px;
-$Botones-Enlaces-Desktop: Bold 700, 16px;
-$Navegación-Desktop:Semi-bold 600, 14px;
-$Texto-adicional-Desktop: Regular 400, 12px;
 
 /*Desktop Font Mobil*/
 $Font-styles-1: Poppins 500 14px;
@@ -43,5 +37,12 @@ $border-radius-type-1: 10px;
 /*Posiciones*/
 $position-A: absolute;
 $position-R: relative;
+
+/*Justificación de texto*/
+
+$display:flex;
+$justify-content: center;
+
+
 
 
