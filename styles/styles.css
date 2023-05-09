@@ -8,13 +8,16 @@
 /*Border radius botón*/
 /*Posiciones*/
 /*Justificación de texto*/
+/*Tamaño de texto*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: 0;
 }
 
+/*Font sizes: 1: 14px, 2:16px*/
 /*Botón tipo 1*/
+/*Botón tipo 4*/
 /*Justificar texto al centro, tanto en x como en y*/
 .header__container {
   width: 320px;
@@ -31,10 +34,10 @@
 
 .header__container-item-carrito-negro {
   background-color: white;
-  position: relative;
+  position: absolute;
   height: 22px;
   width: 21px;
-  left: 217px;
+  left: 280px;
   top: 32px;
   border-radius: 0px;
 }
@@ -44,9 +47,12 @@
   height: 19px;
   width: 176px;
   top: 139px;
-  left: 50px;
+  left: 72px;
   border-radius: nullpx;
   color: gray;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .header__container-item-title {
@@ -54,25 +60,28 @@
   height: 62px;
   width: 288px;
   top: 176px;
-  left: 15px;
+  left: 16px;
   border-radius: nullpx;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .header__container-item-button1 {
   height: 32px;
-  width: 100px;
+  width: 129px;
   position: absolute;
   border-radius: 10px;
-  font-style: Poppins 500 14px;
+  font-size: 14px;
   background-color: black;
   color: white;
   top: 270px;
-  left: 20px;
+  left: 22px;
 }
 
 .header__container-item-button1:hover {
   height: 32px;
-  width: 100px;
+  width: 129px;
   position: absolute;
   border-radius: 10px;
   background-color: gray;
@@ -80,17 +89,18 @@
 
 .header__container-item-button2 {
   height: 32px;
-  width: 100px;
+  width: 129px;
   position: absolute;
   border-radius: 10px;
-  font-style: Poppins 500 14px;
+  font-size: 14px;
   top: 270px;
-  left: 125px;
+  left: 126px;
+  margin-left: 32px;
 }
 
 .header__container-item-button2:hover {
   height: 32px;
-  width: 100px;
+  width: 129px;
   position: absolute;
   border-radius: 10px;
   background-color: gray;
@@ -99,8 +109,8 @@
 /*Estilos del main y sus articulos*/
 .main__container-articule-1 {
   position: absolute;
-  top: 358px;
-  left: 5px;
+  top: 320px;
+  left: 33px;
 }
 
 .main__section {
@@ -181,4 +191,27 @@
 }
 .main__section .main__section-list-star {
   margin-left: 10px;
+}
+.main__section .main__section-list-text5 {
+  position: relative;
+  top: 380px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  justify-content: space-around;
+  color: white;
+  font-size: 12px;
+}
+.main__section #Add-to-kart {
+  height: 32px;
+  width: 288px;
+  position: absolute;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  top: 60px;
+  font-size: 14px;
+}
+.main__section #Add-to-kart:hover {
+  background-color: gray;
 }/*# sourceMappingURL=styles.css.map */

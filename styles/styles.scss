@@ -7,6 +7,18 @@
     box-sizing: 0;
 }
 
+/*Font sizes: 1: 14px, 2:16px*/
+
+@mixin font-size-type-1
+{
+    font-size: $font-size-1;
+}
+
+@mixin font-size-type-2
+{
+    font-size: $font-size-2;
+}
+
 /*Botón tipo 1*/
 
 @mixin button-type1
@@ -17,15 +29,20 @@
     border-radius: $border-radius-type-1;       
 }
 
+/*Botón tipo 4*/
+
+@mixin button-type4
+{
+    height: $boton-tipo-4-height;
+    width: $boton-tipo-4-width;
+    position: $position-A;
+    border-radius: $border-radius-type-1;       
+}
 @mixin button-hover
 {
     background-color: $color-button-hover;
 }
 
-@mixin font-style-type-1
-{
-    font-style: $Font-styles-1;
-}
 
 /*Justificar texto al centro, tanto en x como en y*/
 @mixin justify-text
@@ -34,6 +51,8 @@
     justify-content: $justify-content;
     text-align: $justify-content;
 }
+
+
 
 .header__container
 {
@@ -53,10 +72,10 @@
 .header__container-item-carrito-negro
 {
     background-color: white;
-    position: relative;
+    position: absolute;
     height: 22.0px;
     width: 21px;
-    left: 217px;
+    left: 280px;
     top: 32px;
     border-radius: 0px;
     
@@ -68,9 +87,10 @@
     height: 19px;
     width: 176px;
     top: 139px;
-    left: 50px;
+    left: 72px;
     border-radius: nullpx;
     color: gray;
+    @include justify-text();
 }
 
 .header__container-item-title
@@ -79,37 +99,37 @@
     height: 62px;
     width: 288px;  
     top: 176px;
-    left: 15px;
+    left: 16px;
     border-radius: nullpx;
+    @include justify-text();
      
 }
 
 .header__container-item-button1
 {
     @include button-type1;
-    @include font-style-type-1;
+    @include font-size-type-1();
     background-color: black;
     color: $color2-text-button;
     top: 270px;
-    left:20px;
+    left: 22px;
     
 }
 
 .header__container-item-button1:hover
 {
     @include button-type1;
-    @include button-hover;
-    
-    
+    @include button-hover;   
 }
 
 .header__container-item-button2
 {
     
     @include button-type1;
-    @include font-style-type-1;
+    @include font-size-type-1();
     top: 270px;
-    left: 125px; 
+    left: 126px; 
+    margin-left: 32px;
 }
 
 .header__container-item-button2:hover
@@ -125,8 +145,8 @@
 .main__container-articule-1
 {
     position: absolute;
-    top: 358px;
-    left: 5px;   
+    top: 320px;
+    left: 33px;   
 }
 
 .main__section
@@ -225,6 +245,33 @@
     {
         margin-left: 10px;
     }
+
+    .main__section-list-text5
+    {
+        position: relative;
+        top: 380px;
+        @include justify-text();
+        justify-content: space-around;
+        color: white;
+        font-size: 12px;
+    }
+
+    #Add-to-kart
+    {
+        @include button-type4();
+        background-color: black;
+        
+        color: white;
+        top: 60px;
+        @include font-size-type-1();
+    }
+
+    #Add-to-kart:hover
+    {
+        @include button-hover();
+    }
+
+    
     
 }
 
