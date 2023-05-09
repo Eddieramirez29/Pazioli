@@ -114,8 +114,9 @@
 }
 
 .main__section {
-  height: 72px;
-  width: 288px;
+  height: 3000px;
+  width: 320px;
+  /*Inicia sección 2 de los pianos blancos*/
 }
 .main__section .main__section-background-gray0 {
   position: relative;
@@ -214,4 +215,25 @@
 }
 .main__section #Add-to-kart:hover {
   background-color: gray;
+}
+.main__section .main__section-2-background-1 {
+  position: absolute;
+  top: 1295px;
+}
+.main__section .main__section-2-title {
+  text-align: center;
+  font-size: 24px;
+  position: relative;
+  top: -163px;
+  font-weight: 400;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.main__section .main__section-2-small-white-background {
+  position: relative;
+  top: -180px;
+}
+.main__section .main__section-2-piano-blanco {
+  position: relative;
+  top: -620px;
+  left: 50px;
 }/*# sourceMappingURL=styles.css.map */
